@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+    <style>
+        table {
+            border: solid 1px black;
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+        table tfoot td {
+            background-color: gray;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+        table tr:hover td {
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table summary="Esta tabela se refere a todas as idades dos alunos"  width="250" cellspacing="0" cellpadding="5">
+        <caption>Tabela de idades dos alunos</caption> <!-- Summary é o resumo e n aparece para o client, ja o caption aparece no client e é mais usado para aparecer o nome da tabela -->
+        <thead>
+            <tr>
+                <th colspan="2">Minha tabela</th>
+            </tr>
+            <tr>
+                <th>Nome</th> <!-- th identifica q é o cabeçario da tabela -->
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>day</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>mae</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>sogra</td>
+                <td>568125</td>
+            </tr>
+            <tr>
+                <td>Gustavinho</td>
+                <td>-8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

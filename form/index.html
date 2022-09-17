@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de cadastro</title>
+</head>
+<body>
+    <main>
+        <h1 contenteditable>Formulario do?</h1>
+        <form name="signup" id="form!" onsubmit="alert('Enviei o formulario')" autocomplete="off" target="_blank" method="POST" action="https://meusite.com.br/signup">
+            <label for="">Nome: </label><input form="form!" minlength="3" required type="text" name="name" /><br>
+            <label for="">Idade: </label><input autofocus type="number" min="0" max="15" step="2" name="age" /><br>
+            <label for="">Senha: </label><input type="password" name="password"><br>
+            <button type="submit">Enviar</button>
+            <label for="">Button:</label><button type="button" value="Enviar">Enviar</button><br>
+            <label for="">Range:</label><input type="range" min="0" max="100" value="10"><br>
+            <label for="">Color:</label><input type="color"><br>
+            <label for="">E-mail:</label><input placeholder="Ex :meuemail@gmail.com" type="email"><br>
+            <label for="">URL: </label><input disabled type="url"><br>
+            <label for="">Date</label><input type="date" name="" id=""><br>
+            <label for="">Week:</label><input type="week" name="" id=""><br>
+            <label for="">Checkbox: </label><input type="checkbox" name="" id=""><input type="checkbox" name="" id=""><br>
+            <label for="">Radio:</label><input type="radio" name="aceita" id=""><input type="radio" name="aceita" id=""><br>
+            <label for="">Hidden:</label><input type="hidden"><br>
+            <label for="">File:</label><input type="file" multiple><br>
+            <label for="">Search:</label><input type="search"><br>
+            <fieldset>
+                <legend>Mensagem para:</legend>
+                <label for="">Cargo:</label> <select name="role">
+                    <option value="">Selecione o cargo</option>
+                    <option value="presidente">Presidente</option>
+                    <option value="administrativo">administrativo</option>
+                    <option value="ti">Ti</option>
+                    <option value="gerente">Gerente</option>
+                </select><br>
+                <label for="">Mensagem:</label><textarea minlength="10" maxlength="25" name="message" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <label for="">Button:</label><input type="button" value="Enviar"><br>
+        </form>
+    </main>
+</body>
+</html>
